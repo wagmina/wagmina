@@ -51,8 +51,8 @@ importers:
         specifier: 5.5.2
         version: 5.5.2
       vimina:
-        specifier: https://pkg.pr.new/DeMonkeyCoder/vimina@5b709d2
-        version: https://pkg.pr.new/DeMonkeyCoder/vimina@5b709d2(typescript@5.5.2)
+        specifier: https://pkg.pr.new/wagmina/vimina@a8bc09e
+        version: https://pkg.pr.new/wagmina/vimina@a8bc09e(typescript@5.5.2)
 
   packages/appkit:
     dependencies:
@@ -378,9 +378,9 @@ packages:
     peerDependencies:
       typescript: ^5.0.0
 
-  '@mina-js/klesia-utils@https://pkg.pr.new/palladians/mina-js/@mina-js/klesia-utils@b5e48fd':
-    resolution: {tarball: https://pkg.pr.new/palladians/mina-js/@mina-js/klesia-utils@b5e48fd}
-    version: 0.1.0
+  '@mina-js/klesia-utils@https://pkg.pr.new/palladians/mina-js/@mina-js/klesia-utils@e944086':
+    resolution: {tarball: https://pkg.pr.new/palladians/mina-js/@mina-js/klesia-utils@e944086}
+    version: 0.1.1
     peerDependencies:
       typescript: ^5.0.0
 
@@ -393,6 +393,12 @@ packages:
   '@mina-js/utils@https://pkg.pr.new/palladians/mina-js/@mina-js/utils@d652e7a':
     resolution: {tarball: https://pkg.pr.new/palladians/mina-js/@mina-js/utils@d652e7a}
     version: 0.0.1
+    peerDependencies:
+      typescript: ^5.0.0
+
+  '@mina-js/utils@https://pkg.pr.new/palladians/mina-js/@mina-js/utils@e944086':
+    resolution: {tarball: https://pkg.pr.new/palladians/mina-js/@mina-js/utils@e944086}
+    version: 0.1.1
     peerDependencies:
       typescript: ^5.0.0
 
@@ -855,7 +861,6 @@ packages:
 
   bun@1.1.7:
     resolution: {integrity: sha512-4Q/ySjXfSTOsehxektQuo376FfI/QMPSjnsBAwQAZsRFW37Hb8IdctOABDEBQcrYmiwgDGKlgdWTQ8/5H0N2ww==}
-    cpu: [arm64, x64]
     os: [darwin, linux, win32]
     hasBin: true
 
@@ -2508,8 +2513,8 @@ packages:
       typescript:
         optional: true
 
-  vimina@https://pkg.pr.new/DeMonkeyCoder/vimina@5b709d2:
-    resolution: {tarball: https://pkg.pr.new/DeMonkeyCoder/vimina@5b709d2}
+  vimina@https://pkg.pr.new/wagmina/vimina@a8bc09e:
+    resolution: {tarball: https://pkg.pr.new/wagmina/vimina@a8bc09e}
     version: 0.0.4
     peerDependencies:
       typescript: '>=5.0.4'
@@ -3091,7 +3096,7 @@ snapshots:
       ts-pattern: 5.6.2
       typescript: 5.5.2
 
-  '@mina-js/klesia-utils@https://pkg.pr.new/palladians/mina-js/@mina-js/klesia-utils@b5e48fd(typescript@5.5.2)':
+  '@mina-js/klesia-utils@https://pkg.pr.new/palladians/mina-js/@mina-js/klesia-utils@e944086(typescript@5.5.2)':
     dependencies:
       '@urql/core': 5.1.1
       mina-signer: 3.0.7
@@ -3109,6 +3114,13 @@ snapshots:
     dependencies:
       mina-signer: 3.0.7
       superjson: 2.2.1
+      typescript: 5.5.2
+
+  '@mina-js/utils@https://pkg.pr.new/palladians/mina-js/@mina-js/utils@e944086(typescript@5.5.2)':
+    dependencies:
+      mina-signer: 3.0.7
+      serialize-error: 12.0.0
+      superjson: 2.2.2
       typescript: 5.5.2
 
   '@noble/ciphers@0.6.0': {}
@@ -5580,10 +5592,10 @@ snapshots:
       - utf-8-validate
       - zod
 
-  vimina@https://pkg.pr.new/DeMonkeyCoder/vimina@5b709d2(typescript@5.5.2):
+  vimina@https://pkg.pr.new/wagmina/vimina@a8bc09e(typescript@5.5.2):
     dependencies:
-      '@mina-js/klesia-utils': https://pkg.pr.new/palladians/mina-js/@mina-js/klesia-utils@b5e48fd(typescript@5.5.2)
-      '@mina-js/utils': https://pkg.pr.new/palladians/mina-js/@mina-js/utils@d652e7a(typescript@5.5.2)
+      '@mina-js/klesia-utils': https://pkg.pr.new/palladians/mina-js/@mina-js/klesia-utils@e944086(typescript@5.5.2)
+      '@mina-js/utils': https://pkg.pr.new/palladians/mina-js/@mina-js/utils@e944086(typescript@5.5.2)
       '@noble/hashes': 1.6.1
       '@scure/bip32': 1.6.0
       '@scure/bip39': 1.5.0

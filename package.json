@@ -53,7 +53,7 @@
     "sherif": "^0.8.4",
     "simple-git-hooks": "^2.11.1",
     "typescript": "5.5.2",
-    "vimina": "https://pkg.pr.new/DeMonkeyCoder/vimina@5b709d2"
+    "vimina": "https://pkg.pr.new/wagmina/vimina@a8bc09e"
   },
   "packageManager": "pnpm@9.4.0",
   "pnpm": {

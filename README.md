@@ -5,7 +5,7 @@ A TypeScript interface for the **Mina Protocol**, built on top of the [wagmi.sh]
 ## 🔧 Example Usage
 
 Check out a usage example here:  
-https://github.com/DeMonkeyCoder/scaffold-mina/blob/main/packages/ui/src/pages/index.page.tsx
+https://github.com/wagmina/scaffold-mina/blob/main/packages/ui/src/pages/index.page.tsx
 
 ## 🚀 Live Demo
 

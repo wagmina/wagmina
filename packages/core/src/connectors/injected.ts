@@ -132,7 +132,7 @@ export function injected(parameters: InjectedParameters = {}) {
       //     )
       //     // `'wallet_requestPermissions'` can return a different order of accounts than `'mina_accounts'`
       //     // switch to `'mina_accounts'` ordering if more than one account is connected
-      //     // https://github.com/DeMonkeyCoder/wagmina/issues/4140
+      //     // https://github.com/wagmina/wagmina/issues/4140
       //     if (accounts.length > 0) {
       //       const sortedAccounts = await this.getAccounts()
       //       accounts = sortedAccounts
@@ -232,7 +232,7 @@ export function injected(parameters: InjectedParameters = {}) {
       // https://github.com/MetaMask/metamask-improvement-proposals/blob/main/MIPs/mip-2.md
       try {
         // Adding timeout as not all wallets support this method and can hang
-        // https://github.com/DeMonkeyCoder/wagmina/issues/4064
+        // https://github.com/wagmina/wagmina/issues/4064
         await withTimeout(
           () =>
             // TODO: Remove explicit type for vimina@3
