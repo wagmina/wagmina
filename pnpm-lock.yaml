@@ -51,8 +51,8 @@ importers:
         specifier: 5.5.2
         version: 5.5.2
       vimina:
-        specifier: https://pkg.pr.new/wagmina/vimina@a8bc09e
-        version: https://pkg.pr.new/wagmina/vimina@a8bc09e(typescript@5.5.2)
+        specifier: https://pkg.pr.new/wagmina/vimina@23c2f8b
+        version: https://pkg.pr.new/wagmina/vimina@23c2f8b(typescript@5.5.2)
 
   packages/appkit:
     dependencies:
@@ -2513,8 +2513,8 @@ packages:
       typescript:
         optional: true
 
-  vimina@https://pkg.pr.new/wagmina/vimina@a8bc09e:
-    resolution: {tarball: https://pkg.pr.new/wagmina/vimina@a8bc09e}
+  vimina@https://pkg.pr.new/wagmina/vimina@23c2f8b:
+    resolution: {tarball: https://pkg.pr.new/wagmina/vimina@23c2f8b}
     version: 0.0.4
     peerDependencies:
       typescript: '>=5.0.4'
@@ -5592,7 +5592,7 @@ snapshots:
       - utf-8-validate
       - zod
 
-  vimina@https://pkg.pr.new/wagmina/vimina@a8bc09e(typescript@5.5.2):
+  vimina@https://pkg.pr.new/wagmina/vimina@23c2f8b(typescript@5.5.2):
     dependencies:
       '@mina-js/klesia-utils': https://pkg.pr.new/palladians/mina-js/@mina-js/klesia-utils@e944086(typescript@5.5.2)
       '@mina-js/utils': https://pkg.pr.new/palladians/mina-js/@mina-js/utils@e944086(typescript@5.5.2)
