@@ -57,20 +57,20 @@ importers:
   packages/appkit:
     dependencies:
       '@mina-js/utils':
-        specifier: https://pkg.pr.new/palladians/mina-js/@mina-js/utils@d652e7a
-        version: https://pkg.pr.new/palladians/mina-js/@mina-js/utils@d652e7a(typescript@5.5.2)
+        specifier: https://pkg.pr.new/palladians/mina-js/@mina-js/utils@b5e48fd
+        version: https://pkg.pr.new/palladians/mina-js/@mina-js/utils@b5e48fd(typescript@5.5.2)
       '@reown/appkit':
         specifier: 1.6.9
-        version: 1.6.9(@types/react@18.3.1)(react@18.3.1)(typescript@5.5.2)(zod@3.23.8)
+        version: 1.6.9(@types/react@18.3.1)(react@18.3.1)(typescript@5.5.2)(zod@3.24.2)
       '@reown/appkit-common':
         specifier: 1.6.9
-        version: 1.6.9(typescript@5.5.2)(zod@3.23.8)
+        version: 1.6.9(typescript@5.5.2)(zod@3.24.2)
       '@reown/appkit-core':
         specifier: 1.6.9
-        version: 1.6.9(@types/react@18.3.1)(react@18.3.1)(typescript@5.5.2)(zod@3.23.8)
+        version: 1.6.9(@types/react@18.3.1)(react@18.3.1)(typescript@5.5.2)(zod@3.24.2)
       '@reown/appkit-utils':
         specifier: 1.6.9
-        version: 1.6.9(@types/react@18.3.1)(react@18.3.1)(typescript@5.5.2)(valtio@1.13.2(@types/react@18.3.1)(react@18.3.1))(zod@3.23.8)
+        version: 1.6.9(@types/react@18.3.1)(react@18.3.1)(typescript@5.5.2)(valtio@1.13.2(@types/react@18.3.1)(react@18.3.1))(zod@3.24.2)
       '@reown/appkit-wallet':
         specifier: 1.6.9
         version: 1.6.9(typescript@5.5.2)
@@ -91,8 +91,8 @@ importers:
   packages/core:
     dependencies:
       '@mina-js/connect':
-        specifier: https://pkg.pr.new/palladians/mina-js/@mina-js/connect@d652e7a
-        version: https://pkg.pr.new/palladians/mina-js/@mina-js/connect@d652e7a(typescript@5.5.2)
+        specifier: https://pkg.pr.new/palladians/mina-js/@mina-js/connect@b5e48fd
+        version: https://pkg.pr.new/palladians/mina-js/@mina-js/connect@b5e48fd(typescript@5.5.2)
       eventemitter3:
         specifier: 5.0.1
         version: 5.0.1
@@ -360,21 +360,21 @@ packages:
   '@manypkg/get-packages@1.1.3':
     resolution: {integrity: sha512-fo+QhuU3qE/2TQMQmbVMqaQ6EWbMhi4ABWP+O4AM1NqPBuy0OrApV5LO6BrrgnhtAHS2NH6RrVk9OL181tTi8A==}
 
-  '@mina-js/accounts@https://pkg.pr.new/palladians/mina-js/@mina-js/accounts@d652e7a':
-    resolution: {tarball: https://pkg.pr.new/palladians/mina-js/@mina-js/accounts@d652e7a}
-    version: 0.0.1
+  '@mina-js/accounts@https://pkg.pr.new/palladians/mina-js/@mina-js/accounts@b5e48fd7d8eba73a6133a6566cb3c25e6219f89e':
+    resolution: {tarball: https://pkg.pr.new/palladians/mina-js/@mina-js/accounts@b5e48fd7d8eba73a6133a6566cb3c25e6219f89e}
+    version: 0.1.0
     peerDependencies:
       typescript: ^5.0.0
 
-  '@mina-js/connect@https://pkg.pr.new/palladians/mina-js/@mina-js/connect@d652e7a':
-    resolution: {tarball: https://pkg.pr.new/palladians/mina-js/@mina-js/connect@d652e7a}
-    version: 0.0.1
+  '@mina-js/connect@https://pkg.pr.new/palladians/mina-js/@mina-js/connect@b5e48fd':
+    resolution: {tarball: https://pkg.pr.new/palladians/mina-js/@mina-js/connect@b5e48fd}
+    version: 0.1.0
     peerDependencies:
       typescript: ^5.0.0
 
-  '@mina-js/klesia-sdk@https://pkg.pr.new/palladians/mina-js/@mina-js/klesia-sdk@d652e7a':
-    resolution: {tarball: https://pkg.pr.new/palladians/mina-js/@mina-js/klesia-sdk@d652e7a}
-    version: 0.0.1
+  '@mina-js/klesia-sdk@https://pkg.pr.new/palladians/mina-js/@mina-js/klesia-sdk@b5e48fd7d8eba73a6133a6566cb3c25e6219f89e':
+    resolution: {tarball: https://pkg.pr.new/palladians/mina-js/@mina-js/klesia-sdk@b5e48fd7d8eba73a6133a6566cb3c25e6219f89e}
+    version: 0.1.0
     peerDependencies:
       typescript: ^5.0.0
 
@@ -384,15 +384,21 @@ packages:
     peerDependencies:
       typescript: ^5.0.0
 
-  '@mina-js/providers@https://pkg.pr.new/palladians/mina-js/@mina-js/providers@d652e7a':
-    resolution: {tarball: https://pkg.pr.new/palladians/mina-js/@mina-js/providers@d652e7a}
-    version: 0.0.1
+  '@mina-js/providers@https://pkg.pr.new/palladians/mina-js/@mina-js/providers@b5e48fd7d8eba73a6133a6566cb3c25e6219f89e':
+    resolution: {tarball: https://pkg.pr.new/palladians/mina-js/@mina-js/providers@b5e48fd7d8eba73a6133a6566cb3c25e6219f89e}
+    version: 0.1.0
     peerDependencies:
       typescript: ^5.0.0
 
-  '@mina-js/utils@https://pkg.pr.new/palladians/mina-js/@mina-js/utils@d652e7a':
-    resolution: {tarball: https://pkg.pr.new/palladians/mina-js/@mina-js/utils@d652e7a}
-    version: 0.0.1
+  '@mina-js/utils@https://pkg.pr.new/palladians/mina-js/@mina-js/utils@b5e48fd':
+    resolution: {tarball: https://pkg.pr.new/palladians/mina-js/@mina-js/utils@b5e48fd}
+    version: 0.1.0
+    peerDependencies:
+      typescript: ^5.0.0
+
+  '@mina-js/utils@https://pkg.pr.new/palladians/mina-js/@mina-js/utils@b5e48fd7d8eba73a6133a6566cb3c25e6219f89e':
+    resolution: {tarball: https://pkg.pr.new/palladians/mina-js/@mina-js/utils@b5e48fd7d8eba73a6133a6566cb3c25e6219f89e}
+    version: 0.1.0
     peerDependencies:
       typescript: ^5.0.0
 
@@ -402,15 +408,9 @@ packages:
     peerDependencies:
       typescript: ^5.0.0
 
-  '@noble/ciphers@0.6.0':
-    resolution: {integrity: sha512-mIbq/R9QXk5/cTfESb1OKtyFnk7oc1Om/8onA1158K9/OZUQFDEVy55jVTato+xmp3XX6F6Qh0zz0Nc1AxAlRQ==}
-
   '@noble/ciphers@1.2.1':
     resolution: {integrity: sha512-rONPWMC7PeExE077uLE4oqWrZ1IvAfz3oH9LibVAcVCopJiA9R62uavnbEzdkVmJYI6M6Zgkbeb07+tWjlq2XA==}
     engines: {node: ^14.21.3 || >=16}
-
-  '@noble/curves@1.4.2':
-    resolution: {integrity: sha512-TavHr8qycMChk8UwMld0ZDRvatedkzWfH8IiaeGCfymOP5i0hSCozz9vHOL0nkwk7HRMlFnAiKpS2jrUmSybcw==}
 
   '@noble/curves@1.7.0':
     resolution: {integrity: sha512-UTMhXK9SeDhFJVrHeUJ5uZlI6ajXg10O6Ddocf9S6GjbSBVZsJo88HzKwXznNfGpMTRDyJkqMjNDPYgf0qFWnw==}
@@ -423,10 +423,6 @@ packages:
   '@noble/curves@1.8.1':
     resolution: {integrity: sha512-warwspo+UYUPep0Q+vtdVB4Ugn8GGQj8iyB3gnRWsztmUHTI3S1nhdiWNsPUGL0vud7JlRRk1XEu7Lq1KGTnMQ==}
     engines: {node: ^14.21.3 || >=16}
-
-  '@noble/hashes@1.4.0':
-    resolution: {integrity: sha512-V1JJ1WTRUqHHrOSh597hURcMqVKVGL/ea3kv0gSnEdsEZ0/+VyPghM1lMNGc00z7CIQorSvbKpuJkxvuHbvdbg==}
-    engines: {node: '>= 16'}
 
   '@noble/hashes@1.6.0':
     resolution: {integrity: sha512-YUULf0Uk4/mAA89w+k3+yUYh6NrEvxZa5T6SY3wlMvE2chHkxFUUIDI8/XW1QSC357iA5pSnqt7XEhvFOqmDyQ==}
@@ -538,23 +534,14 @@ packages:
   '@reown/appkit@1.6.9':
     resolution: {integrity: sha512-haSc8G3uQ0hAQklN1RedYoNj+KHUDBRO6rYNa4KIhhp+49EWK7U0gcI1rKGPWpJO1I+ga3Ynj01EVCocFvefIg==}
 
-  '@scure/base@1.1.9':
-    resolution: {integrity: sha512-8YKhl8GHiNI/pU2VMaofa2Tor7PJRAjwQLBBuilkJ9L5+13yVbC7JO/wS7piioAvPSwR3JKM1IJ/u4xQzbcXKg==}
-
   '@scure/base@1.2.4':
     resolution: {integrity: sha512-5Yy9czTO47mqz+/J8GM6GIId4umdCk1wc1q8rKERQulIoc8VP9pzDcghv10Tl2E7R96ZUx/PhND3ESYUQX8NuQ==}
-
-  '@scure/bip32@1.4.0':
-    resolution: {integrity: sha512-sVUpc0Vq3tXCkDGYVWGIZTRfnvu8LoTDaev7vbwh0omSvVORONr960MQWdKqJDCReIEmTj3PAr73O3aoxz7OPg==}
 
   '@scure/bip32@1.6.0':
     resolution: {integrity: sha512-82q1QfklrUUdXJzjuRU7iG7D7XiFx5PHYVS0+oeNKhyDLT7WPqs6pBcM2W5ZdwOwKCwoE1Vy1se+DHjcXwCYnA==}
 
   '@scure/bip32@1.6.2':
     resolution: {integrity: sha512-t96EPDMbtGgtb7onKKqxRLfE5g05k7uHnHRM2xdE6BP/ZmxaLtPek4J4KfVn/90IQNrU1IOAqMgiDtUdtbe3nw==}
-
-  '@scure/bip39@1.3.0':
-    resolution: {integrity: sha512-disdg7gHuTDZtY+ZdkmLpPCk7fxZSu3gBiEGuoC1XYxv9cGx3Z6cpTggCgW6odSOOIXCiDjuGejW+aJKCY/pIQ==}
 
   '@scure/bip39@1.5.0':
     resolution: {integrity: sha512-Dop+ASYhnrwm9+HA/HwXg7j2ZqM6yk2fyLWb5znexjctFY3+E+eU8cIWI0Pql0Qx4hPZCijlGq4OL71g+Uz30A==}
@@ -1693,6 +1680,12 @@ packages:
     resolution: {integrity: sha512-I9jwMn07Sy/IwOj3zVkVik2JTvgpaykDZEigL6Rx6N9LbMywwUSMtxET+7lVoDLLd3O3IXwJwvuuns8UB/HeAg==}
     engines: {node: '>=4'}
 
+  mina-credentials@0.2.6:
+    resolution: {integrity: sha512-S/pqtVI+1S2SILDJ2myqBtZLMzENn5vMv6Yx5H5Ec9EYGj5iuCtEI2DJhOuX2FnxhYa1hTjBjKpz9L2tk0XQpA==}
+    engines: {node: '>=22.0'}
+    peerDependencies:
+      o1js: https://pkg.pr.new/o1-labs/o1js@996ebb3
+
   mina-signer@3.0.7:
     resolution: {integrity: sha512-7eYp/6WWj2VzJjvfC8dNeGMud/brdBrzkUsCdysFFXnfV2/FVpVhAGCMfaS6hs0HJtS4+eplmiD2hXfshQS8CQ==}
 
@@ -2292,10 +2285,6 @@ packages:
   summary@2.1.0:
     resolution: {integrity: sha512-nMIjMrd5Z2nuB2RZCKJfFMjgS3fygbeyGk9PxPPaJR1RIcyN9yn4A63Isovzm3ZtQuEkLBVgMdPup8UeLH7aQw==}
 
-  superjson@2.2.1:
-    resolution: {integrity: sha512-8iGv75BYOa0xRJHK5vRLEjE2H/i4lulTjzpUXic3Eg8akftYjkmQDa8JARQ42rlczXyFR3IeRoeFCc7RxHsYZA==}
-    engines: {node: '>=16'}
-
   superjson@2.2.2:
     resolution: {integrity: sha512-5JRxVqC8I8NuOUjzBbvVJAKNM8qoVuH0O77h4WInc/qC2q5IreqKxYwgkga3PfA22OayK2ikceb/B26dztPl+Q==}
     engines: {node: '>=16'}
@@ -2672,8 +2661,8 @@ packages:
   zod@3.22.4:
     resolution: {integrity: sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==}
 
-  zod@3.23.8:
-    resolution: {integrity: sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g==}
+  zod@3.24.2:
+    resolution: {integrity: sha512-lY7CDW43ECgW9u1TcT3IoXHflywfVqDYze4waEz812jR/bZ8FHDsl7pFQoSZTz5N+2NqRXs8GBwnAwo3ZNxqhQ==}
 
   zustand@4.4.1:
     resolution: {integrity: sha512-QCPfstAS4EBiTQzlaGP1gmorkh/UL1Leaj2tdj+zZCZ/9bm0WS7sI2wnfD5lpOszFqWJ1DcPnGoY8RDL61uokw==}
@@ -3067,30 +3056,34 @@ snapshots:
       globby: 11.1.0
       read-yaml-file: 1.1.0
 
-  '@mina-js/accounts@https://pkg.pr.new/palladians/mina-js/@mina-js/accounts@d652e7a(typescript@5.5.2)':
+  '@mina-js/accounts@https://pkg.pr.new/palladians/mina-js/@mina-js/accounts@b5e48fd7d8eba73a6133a6566cb3c25e6219f89e(typescript@5.5.2)':
     dependencies:
-      '@mina-js/providers': https://pkg.pr.new/palladians/mina-js/@mina-js/providers@d652e7a(typescript@5.5.2)
-      '@noble/ciphers': 0.6.0
-      '@noble/curves': 1.4.2
-      '@noble/hashes': 1.4.0
+      '@mina-js/providers': https://pkg.pr.new/palladians/mina-js/@mina-js/providers@b5e48fd7d8eba73a6133a6566cb3c25e6219f89e(typescript@5.5.2)
+      '@noble/ciphers': 1.2.1
+      '@noble/curves': 1.8.1
+      '@noble/hashes': 1.7.1
       '@scure/base': 1.2.4
-      '@scure/bip32': 1.4.0
-      '@scure/bip39': 1.3.0
+      '@scure/bip32': 1.6.2
+      '@scure/bip39': 1.5.4
       mina-signer: 3.0.7
       typescript: 5.5.2
-      zod: 3.23.8
+      zod: 3.24.2
+    transitivePeerDependencies:
+      - o1js
 
-  '@mina-js/connect@https://pkg.pr.new/palladians/mina-js/@mina-js/connect@d652e7a(typescript@5.5.2)':
+  '@mina-js/connect@https://pkg.pr.new/palladians/mina-js/@mina-js/connect@b5e48fd(typescript@5.5.2)':
     dependencies:
-      '@mina-js/accounts': https://pkg.pr.new/palladians/mina-js/@mina-js/accounts@d652e7a(typescript@5.5.2)
-      '@mina-js/klesia-sdk': https://pkg.pr.new/palladians/mina-js/@mina-js/klesia-sdk@d652e7a(typescript@5.5.2)
-      '@mina-js/providers': https://pkg.pr.new/palladians/mina-js/@mina-js/providers@d652e7a(typescript@5.5.2)
-      '@mina-js/utils': https://pkg.pr.new/palladians/mina-js/@mina-js/utils@d652e7a(typescript@5.5.2)
+      '@mina-js/accounts': https://pkg.pr.new/palladians/mina-js/@mina-js/accounts@b5e48fd7d8eba73a6133a6566cb3c25e6219f89e(typescript@5.5.2)
+      '@mina-js/klesia-sdk': https://pkg.pr.new/palladians/mina-js/@mina-js/klesia-sdk@b5e48fd7d8eba73a6133a6566cb3c25e6219f89e(typescript@5.5.2)
+      '@mina-js/providers': https://pkg.pr.new/palladians/mina-js/@mina-js/providers@b5e48fd7d8eba73a6133a6566cb3c25e6219f89e(typescript@5.5.2)
+      '@mina-js/utils': https://pkg.pr.new/palladians/mina-js/@mina-js/utils@b5e48fd7d8eba73a6133a6566cb3c25e6219f89e(typescript@5.5.2)
       ts-pattern: 5.6.2
       typescript: 5.5.2
-      zod: 3.23.8
+      zod: 3.24.2
+    transitivePeerDependencies:
+      - o1js
 
-  '@mina-js/klesia-sdk@https://pkg.pr.new/palladians/mina-js/@mina-js/klesia-sdk@d652e7a(typescript@5.5.2)':
+  '@mina-js/klesia-sdk@https://pkg.pr.new/palladians/mina-js/@mina-js/klesia-sdk@b5e48fd7d8eba73a6133a6566cb3c25e6219f89e(typescript@5.5.2)':
     dependencies:
       micro-ftch: 0.4.2
       ts-pattern: 5.6.2
@@ -3106,14 +3099,25 @@ snapshots:
     transitivePeerDependencies:
       - graphql
 
-  '@mina-js/providers@https://pkg.pr.new/palladians/mina-js/@mina-js/providers@d652e7a(typescript@5.5.2)':
+  '@mina-js/providers@https://pkg.pr.new/palladians/mina-js/@mina-js/providers@b5e48fd7d8eba73a6133a6566cb3c25e6219f89e(typescript@5.5.2)':
     dependencies:
+      mina-credentials: 0.2.6
       typescript: 5.5.2
+    transitivePeerDependencies:
+      - o1js
 
-  '@mina-js/utils@https://pkg.pr.new/palladians/mina-js/@mina-js/utils@d652e7a(typescript@5.5.2)':
+  '@mina-js/utils@https://pkg.pr.new/palladians/mina-js/@mina-js/utils@b5e48fd(typescript@5.5.2)':
     dependencies:
       mina-signer: 3.0.7
-      superjson: 2.2.1
+      serialize-error: 12.0.0
+      superjson: 2.2.2
+      typescript: 5.5.2
+
+  '@mina-js/utils@https://pkg.pr.new/palladians/mina-js/@mina-js/utils@b5e48fd7d8eba73a6133a6566cb3c25e6219f89e(typescript@5.5.2)':
+    dependencies:
+      mina-signer: 3.0.7
+      serialize-error: 12.0.0
+      superjson: 2.2.2
       typescript: 5.5.2
 
   '@mina-js/utils@https://pkg.pr.new/palladians/mina-js/@mina-js/utils@e944086(typescript@5.5.2)':
@@ -3123,13 +3127,7 @@ snapshots:
       superjson: 2.2.2
       typescript: 5.5.2
 
-  '@noble/ciphers@0.6.0': {}
-
   '@noble/ciphers@1.2.1': {}
-
-  '@noble/curves@1.4.2':
-    dependencies:
-      '@noble/hashes': 1.4.0
 
   '@noble/curves@1.7.0':
     dependencies:
@@ -3142,8 +3140,6 @@ snapshots:
   '@noble/curves@1.8.1':
     dependencies:
       '@noble/hashes': 1.7.1
-
-  '@noble/hashes@1.4.0': {}
 
   '@noble/hashes@1.6.0': {}
 
@@ -3215,24 +3211,24 @@ snapshots:
       - utf-8-validate
       - zod
 
-  '@reown/appkit-common@1.6.9(typescript@5.5.2)(zod@3.23.8)':
+  '@reown/appkit-common@1.6.9(typescript@5.5.2)(zod@3.24.2)':
     dependencies:
       big.js: 6.2.2
       dayjs: 1.11.10
-      viem: 2.23.10(typescript@5.5.2)(zod@3.23.8)
+      viem: 2.23.10(typescript@5.5.2)(zod@3.24.2)
     transitivePeerDependencies:
       - bufferutil
       - typescript
       - utf-8-validate
       - zod
 
-  '@reown/appkit-core@1.6.9(@types/react@18.3.1)(react@18.3.1)(typescript@5.5.2)(zod@3.23.8)':
+  '@reown/appkit-core@1.6.9(@types/react@18.3.1)(react@18.3.1)(typescript@5.5.2)(zod@3.24.2)':
     dependencies:
-      '@reown/appkit-common': 1.6.9(typescript@5.5.2)(zod@3.23.8)
+      '@reown/appkit-common': 1.6.9(typescript@5.5.2)(zod@3.24.2)
       '@reown/appkit-wallet': 1.6.9(typescript@5.5.2)
       '@walletconnect/universal-provider': 2.18.0
       valtio: 1.13.2(@types/react@18.3.1)(react@18.3.1)
-      viem: 2.23.10(typescript@5.5.2)(zod@3.23.8)
+      viem: 2.23.10(typescript@5.5.2)(zod@3.24.2)
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
@@ -3264,12 +3260,12 @@ snapshots:
     dependencies:
       buffer: 6.0.3
 
-  '@reown/appkit-scaffold-ui@1.6.9(@types/react@18.3.1)(react@18.3.1)(typescript@5.5.2)(valtio@1.13.2(@types/react@18.3.1)(react@18.3.1))(zod@3.23.8)':
+  '@reown/appkit-scaffold-ui@1.6.9(@types/react@18.3.1)(react@18.3.1)(typescript@5.5.2)(valtio@1.13.2(@types/react@18.3.1)(react@18.3.1))(zod@3.24.2)':
     dependencies:
-      '@reown/appkit-common': 1.6.9(typescript@5.5.2)(zod@3.23.8)
-      '@reown/appkit-core': 1.6.9(@types/react@18.3.1)(react@18.3.1)(typescript@5.5.2)(zod@3.23.8)
+      '@reown/appkit-common': 1.6.9(typescript@5.5.2)(zod@3.24.2)
+      '@reown/appkit-core': 1.6.9(@types/react@18.3.1)(react@18.3.1)(typescript@5.5.2)(zod@3.24.2)
       '@reown/appkit-ui': 1.6.9
-      '@reown/appkit-utils': 1.6.9(@types/react@18.3.1)(react@18.3.1)(typescript@5.5.2)(valtio@1.13.2(@types/react@18.3.1)(react@18.3.1))(zod@3.23.8)
+      '@reown/appkit-utils': 1.6.9(@types/react@18.3.1)(react@18.3.1)(typescript@5.5.2)(valtio@1.13.2(@types/react@18.3.1)(react@18.3.1))(zod@3.24.2)
       '@reown/appkit-wallet': 1.6.9(typescript@5.5.2)
       lit: 3.1.0
     transitivePeerDependencies:
@@ -3305,16 +3301,16 @@ snapshots:
       lit: 3.1.0
       qrcode: 1.5.3
 
-  '@reown/appkit-utils@1.6.9(@types/react@18.3.1)(react@18.3.1)(typescript@5.5.2)(valtio@1.13.2(@types/react@18.3.1)(react@18.3.1))(zod@3.23.8)':
+  '@reown/appkit-utils@1.6.9(@types/react@18.3.1)(react@18.3.1)(typescript@5.5.2)(valtio@1.13.2(@types/react@18.3.1)(react@18.3.1))(zod@3.24.2)':
     dependencies:
-      '@reown/appkit-common': 1.6.9(typescript@5.5.2)(zod@3.23.8)
-      '@reown/appkit-core': 1.6.9(@types/react@18.3.1)(react@18.3.1)(typescript@5.5.2)(zod@3.23.8)
+      '@reown/appkit-common': 1.6.9(typescript@5.5.2)(zod@3.24.2)
+      '@reown/appkit-core': 1.6.9(@types/react@18.3.1)(react@18.3.1)(typescript@5.5.2)(zod@3.24.2)
       '@reown/appkit-polyfills': 1.6.9
       '@reown/appkit-wallet': 1.6.9(typescript@5.5.2)
       '@walletconnect/logger': 2.1.2
       '@walletconnect/universal-provider': 2.18.0
       valtio: 1.13.2(@types/react@18.3.1)(react@18.3.1)
-      viem: 2.23.10(typescript@5.5.2)(zod@3.23.8)
+      viem: 2.23.10(typescript@5.5.2)(zod@3.24.2)
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
@@ -3353,21 +3349,21 @@ snapshots:
       - typescript
       - utf-8-validate
 
-  '@reown/appkit@1.6.9(@types/react@18.3.1)(react@18.3.1)(typescript@5.5.2)(zod@3.23.8)':
+  '@reown/appkit@1.6.9(@types/react@18.3.1)(react@18.3.1)(typescript@5.5.2)(zod@3.24.2)':
     dependencies:
-      '@reown/appkit-common': 1.6.9(typescript@5.5.2)(zod@3.23.8)
-      '@reown/appkit-core': 1.6.9(@types/react@18.3.1)(react@18.3.1)(typescript@5.5.2)(zod@3.23.8)
+      '@reown/appkit-common': 1.6.9(typescript@5.5.2)(zod@3.24.2)
+      '@reown/appkit-core': 1.6.9(@types/react@18.3.1)(react@18.3.1)(typescript@5.5.2)(zod@3.24.2)
       '@reown/appkit-polyfills': 1.6.9
-      '@reown/appkit-scaffold-ui': 1.6.9(@types/react@18.3.1)(react@18.3.1)(typescript@5.5.2)(valtio@1.13.2(@types/react@18.3.1)(react@18.3.1))(zod@3.23.8)
+      '@reown/appkit-scaffold-ui': 1.6.9(@types/react@18.3.1)(react@18.3.1)(typescript@5.5.2)(valtio@1.13.2(@types/react@18.3.1)(react@18.3.1))(zod@3.24.2)
       '@reown/appkit-ui': 1.6.9
-      '@reown/appkit-utils': 1.6.9(@types/react@18.3.1)(react@18.3.1)(typescript@5.5.2)(valtio@1.13.2(@types/react@18.3.1)(react@18.3.1))(zod@3.23.8)
+      '@reown/appkit-utils': 1.6.9(@types/react@18.3.1)(react@18.3.1)(typescript@5.5.2)(valtio@1.13.2(@types/react@18.3.1)(react@18.3.1))(zod@3.24.2)
       '@reown/appkit-wallet': 1.6.9(typescript@5.5.2)
       '@walletconnect/types': 2.18.0
       '@walletconnect/universal-provider': 2.18.0
       '@walletconnect/utils': 2.18.0
       bs58: 6.0.0
       valtio: 1.13.2(@types/react@18.3.1)(react@18.3.1)
-      viem: 2.23.10(typescript@5.5.2)(zod@3.23.8)
+      viem: 2.23.10(typescript@5.5.2)(zod@3.24.2)
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
@@ -3395,15 +3391,7 @@ snapshots:
       - utf-8-validate
       - zod
 
-  '@scure/base@1.1.9': {}
-
   '@scure/base@1.2.4': {}
-
-  '@scure/bip32@1.4.0':
-    dependencies:
-      '@noble/curves': 1.4.2
-      '@noble/hashes': 1.4.0
-      '@scure/base': 1.1.9
 
   '@scure/bip32@1.6.0':
     dependencies:
@@ -3416,11 +3404,6 @@ snapshots:
       '@noble/curves': 1.8.1
       '@noble/hashes': 1.7.1
       '@scure/base': 1.2.4
-
-  '@scure/bip39@1.3.0':
-    dependencies:
-      '@noble/hashes': 1.4.0
-      '@scure/base': 1.1.9
 
   '@scure/bip39@1.5.0':
     dependencies:
@@ -3812,10 +3795,10 @@ snapshots:
       typescript: 5.5.2
       zod: 3.22.4
 
-  abitype@1.0.8(typescript@5.5.2)(zod@3.23.8):
+  abitype@1.0.8(typescript@5.5.2)(zod@3.24.2):
     optionalDependencies:
       typescript: 5.5.2
-      zod: 3.23.8
+      zod: 3.24.2
 
   aggregate-error@3.1.0:
     dependencies:
@@ -4826,6 +4809,8 @@ snapshots:
 
   min-indent@1.0.1: {}
 
+  mina-credentials@0.2.6: {}
+
   mina-signer@3.0.7:
     dependencies:
       blakejs: 1.2.1
@@ -4960,14 +4945,14 @@ snapshots:
     transitivePeerDependencies:
       - zod
 
-  ox@0.6.9(typescript@5.5.2)(zod@3.23.8):
+  ox@0.6.9(typescript@5.5.2)(zod@3.24.2):
     dependencies:
       '@adraffy/ens-normalize': 1.11.0
       '@noble/curves': 1.8.1
       '@noble/hashes': 1.7.1
       '@scure/bip32': 1.6.2
       '@scure/bip39': 1.5.4
-      abitype: 1.0.8(typescript@5.5.2)(zod@3.23.8)
+      abitype: 1.0.8(typescript@5.5.2)(zod@3.24.2)
       eventemitter3: 5.0.1
     optionalDependencies:
       typescript: 5.5.2
@@ -5411,10 +5396,6 @@ snapshots:
 
   summary@2.1.0: {}
 
-  superjson@2.2.1:
-    dependencies:
-      copy-anything: 3.0.5
-
   superjson@2.2.2:
     dependencies:
       copy-anything: 3.0.5
@@ -5575,15 +5556,15 @@ snapshots:
       - utf-8-validate
       - zod
 
-  viem@2.23.10(typescript@5.5.2)(zod@3.23.8):
+  viem@2.23.10(typescript@5.5.2)(zod@3.24.2):
     dependencies:
       '@noble/curves': 1.8.1
       '@noble/hashes': 1.7.1
       '@scure/bip32': 1.6.2
       '@scure/bip39': 1.5.4
-      abitype: 1.0.8(typescript@5.5.2)(zod@3.23.8)
+      abitype: 1.0.8(typescript@5.5.2)(zod@3.24.2)
       isows: 1.0.6(ws@8.18.1)
-      ox: 0.6.9(typescript@5.5.2)(zod@3.23.8)
+      ox: 0.6.9(typescript@5.5.2)(zod@3.24.2)
       ws: 8.18.1
     optionalDependencies:
       typescript: 5.5.2
@@ -5742,7 +5723,7 @@ snapshots:
 
   zod@3.22.4: {}
 
-  zod@3.23.8: {}
+  zod@3.24.2: {}
 
   zustand@4.4.1(@types/react@18.3.1)(react@18.3.1):
     dependencies:

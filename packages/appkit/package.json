@@ -46,8 +46,12 @@
   },
   "typesVersions": {
     "*": {
-      "adapter": ["./dist/types/exports/adapter.d.ts"],
-      "networks": ["./dist/types/exports/networks.d.ts"]
+      "adapter": [
+        "./dist/types/exports/adapter.d.ts"
+      ],
+      "networks": [
+        "./dist/types/exports/networks.d.ts"
+      ]
     }
   },
   "peerDependencies": {
@@ -61,7 +65,7 @@
     }
   },
   "dependencies": {
-    "@mina-js/utils": "https://pkg.pr.new/palladians/mina-js/@mina-js/utils@d652e7a",
+    "@mina-js/utils": "https://pkg.pr.new/palladians/mina-js/@mina-js/utils@b5e48fd",
     "@reown/appkit": "1.6.9",
     "@reown/appkit-common": "1.6.9",
     "@reown/appkit-core": "1.6.9",
@@ -71,7 +75,15 @@
     "valtio": "1.13.2",
     "wagmina": "workspace:*"
   },
-  "keywords": ["wagmina", "mina", "dapps", "wallet", "web3", "appkit", "reown"],
+  "keywords": [
+    "wagmina",
+    "mina",
+    "dapps",
+    "wallet",
+    "web3",
+    "appkit",
+    "reown"
+  ],
   "devDependencies": {
     "@walletconnect/universal-provider": "^2.18.0"
   }

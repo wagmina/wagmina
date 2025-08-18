@@ -56,10 +56,18 @@
   },
   "typesVersions": {
     "*": {
-      "actions": ["./dist/types/exports/actions.d.ts"],
-      "chains": ["./dist/types/exports/chains.d.ts"],
-      "internal": ["./dist/types/exports/internal.d.ts"],
-      "query": ["./dist/types/exports/query.d.ts"]
+      "actions": [
+        "./dist/types/exports/actions.d.ts"
+      ],
+      "chains": [
+        "./dist/types/exports/chains.d.ts"
+      ],
+      "internal": [
+        "./dist/types/exports/internal.d.ts"
+      ],
+      "query": [
+        "./dist/types/exports/query.d.ts"
+      ]
     }
   },
   "peerDependencies": {
@@ -76,12 +84,18 @@
     }
   },
   "dependencies": {
-    "@mina-js/connect": "https://pkg.pr.new/palladians/mina-js/@mina-js/connect@d652e7a",
+    "@mina-js/connect": "https://pkg.pr.new/palladians/mina-js/@mina-js/connect@b5e48fd",
     "eventemitter3": "5.0.1",
     "zustand": "4.4.1"
   },
   "devDependencies": {
     "@tanstack/query-core": "^5.49.1"
   },
-  "keywords": ["wagmina", "mina", "dapps", "wallet", "web3"]
+  "keywords": [
+    "wagmina",
+    "mina",
+    "dapps",
+    "wallet",
+    "web3"
+  ]
 }
