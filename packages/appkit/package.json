@@ -1,7 +1,7 @@
 {
   "name": "@wagmina/appkit",
   "description": "Integration tools connecting Wagmina with Reown's AppKit",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -46,12 +46,8 @@
   },
   "typesVersions": {
     "*": {
-      "adapter": [
-        "./dist/types/exports/adapter.d.ts"
-      ],
-      "networks": [
-        "./dist/types/exports/networks.d.ts"
-      ]
+      "adapter": ["./dist/types/exports/adapter.d.ts"],
+      "networks": ["./dist/types/exports/networks.d.ts"]
     }
   },
   "peerDependencies": {
@@ -75,15 +71,7 @@
     "valtio": "1.13.2",
     "wagmina": "workspace:*"
   },
-  "keywords": [
-    "wagmina",
-    "mina",
-    "dapps",
-    "wallet",
-    "web3",
-    "appkit",
-    "reown"
-  ],
+  "keywords": ["wagmina", "mina", "dapps", "wallet", "web3", "appkit", "reown"],
   "devDependencies": {
     "@walletconnect/universal-provider": "^2.18.0"
   }

@@ -1,12 +1,10 @@
 import {
   type Address,
-  type Hex,
   type JSAPIStandardRequestFn,
   RpcRequestError,
   SwitchChainError,
   type Transport,
   UserRejectedRequestError,
-  type WalletCallReceipt,
   type WalletRpcSchema,
   custom,
   getAddress,
@@ -36,7 +34,6 @@ export type MockParameters = {
 mock.type = 'mock' as const
 
 export function mock(parameters: MockParameters) {
-  const transactionCache = new Map<string, string[]>()
   const features = parameters.features ?? {}
 
   type Provider = ReturnType<
@@ -130,14 +127,6 @@ export function mock(parameters: MockParameters) {
         // mina methods
         if (method === 'mina_networkId') return connectedNetworkId
         if (method === 'mina_requestAccounts') return parameters.accounts
-        if (method === 'mina_signTypedData_v4')
-          if (features.signTypedDataError) {
-            if (typeof features.signTypedDataError === 'boolean')
-              throw new UserRejectedRequestError(
-                new Error('Failed to sign typed data.'),
-              )
-            throw features.signTypedDataError
-          }
 
         // wallet methods
         if (method === 'mina_switchChain') {
@@ -152,113 +141,6 @@ export function mock(parameters: MockParameters) {
           connectedNetworkId = (params as Params)[0].networkId
           this.onChainChanged(connectedNetworkId.toString())
           return
-        }
-
-        if (method === 'wallet_watchAsset') {
-          if (features.watchAssetError) {
-            if (typeof features.watchAssetError === 'boolean')
-              throw new UserRejectedRequestError(
-                new Error('Failed to switch chain.'),
-              )
-            throw features.watchAssetError
-          }
-          return connected
-        }
-
-        if (method === 'wallet_getCapabilities')
-          return {
-            '0x2105': {
-              paymasterService: {
-                supported:
-                  (params as [Hex])[0] ===
-                  '0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266',
-              },
-              sessionKeys: {
-                supported: true,
-              },
-            },
-            '0x14A34': {
-              paymasterService: {
-                supported:
-                  (params as [Hex])[0] ===
-                  '0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266',
-              },
-            },
-          }
-
-        if (method === 'wallet_sendCalls') {
-          const hashes = []
-          const calls = (params as any)[0].calls
-          for (const call of calls) {
-            const { result, error } = await getKlesiaRpcClient(url).request({
-              body: {
-                method: 'mina_sendTransaction',
-                params: [call],
-              },
-            })
-            if (error)
-              throw new RpcRequestError({
-                body: { method, params },
-                error,
-                url,
-              })
-            hashes.push(result)
-          }
-          // const id = keccak256(stringToHex(JSON.stringify(calls)));
-          const id = JSON.stringify(calls)
-          transactionCache.set(id, hashes)
-          return id
-        }
-
-        if (method === 'wallet_getCallsStatus') {
-          const hashes = transactionCache.get((params as any)[0])
-          if (!hashes) return null
-          const receipts = await Promise.all(
-            hashes.map(async (hash) => {
-              const { result, error } = await getKlesiaRpcClient(url).request({
-                body: {
-                  method: 'mina_getTransactionReceipt',
-                  params: [hash],
-                  id: 0,
-                },
-              })
-              if (error)
-                throw new RpcRequestError({
-                  body: { method, params },
-                  error,
-                  url,
-                })
-              if (!result) return null
-              return {
-                blockHash: result.blockHash,
-                blockNumber: result.blockNumber,
-                gasUsed: result.gasUsed,
-                logs: result.logs,
-                status: result.status,
-                transactionHash: result.transactionHash,
-              } satisfies WalletCallReceipt
-            }),
-          )
-          if (receipts.some((x) => !x))
-            return { status: 'PENDING', receipts: [] }
-          return { status: 'CONFIRMED', receipts }
-        }
-
-        if (method === 'wallet_showCallsStatus') return
-
-        // other methods
-        if (method === 'personal_sign') {
-          if (features.signMessageError) {
-            if (typeof features.signMessageError === 'boolean')
-              throw new UserRejectedRequestError(
-                new Error('Failed to sign message.'),
-              )
-            throw features.signMessageError
-          }
-          // Change `personal_sign` to `mina_sign` and swap params
-          method = 'mina_sign'
-          type Params = [data: Hex, address: Address]
-          params = [(params as Params)[1], (params as Params)[0]]
         }
 
         const body = { method, params }

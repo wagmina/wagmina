@@ -10,7 +10,7 @@ import type {
 import type { Transport } from '../createConfig.js'
 import type { Emitter } from '../createEmitter.js'
 import type { Storage } from '../createStorage.js'
-import type { Compute, ExactPartial, StrictOmit } from '../types/utils.js'
+import type { Compute } from '../types/utils.js'
 
 export type ConnectorEventMap = {
   change: {
@@ -64,9 +64,7 @@ export type CreateConnectorFn<
     isAuthorized(): Promise<boolean>
     switchChain?(
       parameters: Compute<{
-        addMinaChainParameter?:
-          | ExactPartial<StrictOmit<AddMinaChainParameter, 'networkId'>>
-          | undefined
+        addMinaChainParameter?: AddMinaChainParameter | undefined
         networkId: string
       }>,
     ): Promise<Chain>

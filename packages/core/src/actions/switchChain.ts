@@ -16,7 +16,7 @@ import {
   type SwitchChainNotSupportedErrorType,
 } from '../errors/connector.js'
 import type { ConnectorParameter } from '../types/properties.js'
-import type { Compute, ExactPartial } from '../types/utils.js'
+import type { Compute } from '../types/utils.js'
 
 export type SwitchChainParameters<
   config extends Config = Config,
@@ -25,9 +25,7 @@ export type SwitchChainParameters<
 > = Compute<
   ConnectorParameter & {
     networkId: networkId | config['chains'][number]['id']
-    addMinaChainParameter?:
-      | Compute<ExactPartial<Omit<AddMinaChainParameter, 'networkId'>>>
-      | undefined
+    addMinaChainParameter?: Compute<AddMinaChainParameter> | undefined
   }
 >
 
